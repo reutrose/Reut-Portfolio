@@ -1,0 +1,40 @@
+.about-me-box {
+	padding: 100px;
+}
+
+.about-me-content {
+	font-size: clamp(0.9rem, 0.88rem + 0.1vw, 1rem);
+	width: 90%;
+}
+
+.divider {
+	width: 20%;
+	border: 2px dashed rgba(117, 34, 230, 0.3);
+}
+
+.profile-pic {
+	max-width: 320px;
+}
+
+@media (max-width: 1200px) {
+	.about-me-box {
+		padding: 50px;
+	}
+}
+
+@media (max-width: 991px) {
+	.about-me-box {
+		padding: 0px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 576px) {
+	.about-me-content {
+		width: 95%;
+	}
+}

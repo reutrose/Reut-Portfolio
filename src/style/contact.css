@@ -1,0 +1,10 @@
+.error-space {
+	height: 20px;
+	color: red;
+	font-size: 0.875rem;
+	margin-left: 5px;
+}
+
+textarea {
+	resize: none;
+}

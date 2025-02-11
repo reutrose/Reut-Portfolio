@@ -1,0 +1,22 @@
+.card-border {
+	border: 2px solid rgba(117, 34, 230, 0.4);
+}
+
+.project-button button {
+	border: none;
+}
+
+.git-button img {
+	width: 20px;
+	height: 20px;
+}
+
+.save-button img {
+	width: 20px;
+	height: 20px;
+}
+
+.view-button img {
+	width: 17px;
+	height: 17px;
+}

@@ -1,0 +1,49 @@
+.projects-container {
+	position: relative;
+}
+
+.projects-header {
+	position: absolute;
+	top: -38px;
+	left: 12%;
+}
+
+.projects-header h2 {
+	font-family: "Caveat Brush", cursive;
+	font-size: 2.5rem;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	width: 150px;
+	height: 60px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.projects-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.projects-type {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 10px;
+}
+
+.projects-type {
+	font-family: "Caveat Brush", cursive;
+	transform: rotate(-10deg);
+}
+
+.btn-more {
+	max-width: 250px;
+}
+
+@media (max-width: 767px) {
+	.projects-type {
+		width: 100%;
+	}
+}

@@ -1,0 +1,17 @@
+.footer-container {
+	background-color: #5218a5;
+}
+
+.footer-custom {
+	background-color: #5218a5; /* Your chosen footer color */
+	width: 100vw;
+	height: 150px; /* Adjust height as needed */
+	border-top-left-radius: 50% 100px;
+	border-top-right-radius: 50% 100px;
+	position: relative;
+	bottom: 0;
+}
+
+.rights {
+	font-size: 12px;
+}

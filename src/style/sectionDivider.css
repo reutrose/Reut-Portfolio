@@ -1,0 +1,35 @@
+.divider-container-arrow {
+	height: 25vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.arrow-divider {
+	width: 0;
+	height: 0;
+	border-left: 55vw solid transparent;
+	border-right: 55vw solid transparent;
+	border-top: 10vh solid #ffffff;
+}
+
+.divider-container-side {
+	height: 10vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.one-side-divider {
+	width: 0;
+	height: 0;
+	border-left: 100vw solid transparent;
+	border-right: 0vw solid transparent;
+	border-top: 10vh solid #7522e6;
+}
+
+.sep-divider {
+	width: 100%;
+	border: 2px dashed rgba(128, 128, 128, 0.2);
+	margin: 30px 0px 30px 0px;
+}
