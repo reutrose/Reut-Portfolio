@@ -1,4 +1,4 @@
-import "../style/SectionDivider.css";
+import "../style/sectionDivider.css";
 import PropTypes from "prop-types";
 
 function SectionDivider({ dividerType }) {
