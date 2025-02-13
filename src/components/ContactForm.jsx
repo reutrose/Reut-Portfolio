@@ -33,15 +33,20 @@ const ContactForm = () => {
 		},
 		validationSchema,
 		onSubmit: (values) => {
-			alert("Form submitted successfully!");
-			console.log(values);
+			alert(
+				`Thank you, ${values.name}. I will contact you back via ${contactMethod}.`
+			);
 		},
 	});
 
 	return (
 		<div className="container-sm-12 pt-4 pb-4">
 			<h2 className="mb-4 text-purple fw-bold font-inter">Contact Me</h2>
-			<form onSubmit={formik.handleSubmit}>
+			<form
+				action="https://formsubmit.co/rosenfeldreut@gmail.com"
+				method="POST"
+				onSubmit={formik.handleSubmit}
+			>
 				<div className="form-floating">
 					<input
 						type="text"
