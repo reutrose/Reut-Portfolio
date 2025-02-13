@@ -43,7 +43,7 @@ const ContactForm = () => {
 		<div className="container-sm-12 pt-4 pb-4">
 			<h2 className="mb-4 text-purple fw-bold font-inter">Contact Me</h2>
 			<form
-				action="https://formsubmit.co/rosenfeldreut@gmail.com"
+				action="https://formsubmit.co/reutroz@gmail.com"
 				method="POST"
 				onSubmit={formik.handleSubmit}
 			>
