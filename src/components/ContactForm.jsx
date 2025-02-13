@@ -55,6 +55,7 @@ const ContactForm = () => {
 						}`}
 						{...formik.getFieldProps("name")}
 						id="name"
+						name="name"
 						placeholder="Your Name"
 					/>
 					<label htmlFor="name">Name</label>
@@ -73,6 +74,7 @@ const ContactForm = () => {
 							setContactMethod(e.target.value);
 						}}
 						id="contactMethod"
+						name="contactMethod"
 					>
 						<option value="email">Email</option>
 						<option value="phone">Phone</option>
@@ -96,6 +98,7 @@ const ContactForm = () => {
 								}`}
 								{...formik.getFieldProps("email")}
 								id="email"
+								name="email"
 								placeholder="Your Email"
 							/>
 							<label htmlFor="email">Email</label>
@@ -119,6 +122,7 @@ const ContactForm = () => {
 								}`}
 								{...formik.getFieldProps("phone")}
 								id="phone"
+								name="phone"
 								placeholder="Your Phone Number"
 							/>
 							<label htmlFor="phone">Phone</label>
@@ -139,6 +143,7 @@ const ContactForm = () => {
 						}`}
 						{...formik.getFieldProps("message")}
 						id="message"
+						name="message"
 						placeholder="Your Message"
 						style={{ height: "150px" }}
 					></textarea>
