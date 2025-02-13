@@ -37,6 +37,10 @@ const ContactForm = () => {
 			if (formRef.current) {
 				formRef.current.submit();
 			}
+
+			setTimeout(() => {
+				window.location.reload();
+			}, 1000);
 		},
 	});
 
@@ -49,6 +53,8 @@ const ContactForm = () => {
 				method="POST"
 				onSubmit={formik.handleSubmit}
 			>
+				<input type="hidden" name="_next" value={window.location.href} />
+				<input type="hidden" name="_captcha" value="false" />
 				<div className="form-floating">
 					<input
 						type="text"
