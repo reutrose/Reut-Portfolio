@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import "../style/contact.css";
 
 const ContactForm = () => {
+	const formRef = useRef(null);
 	const [contactMethod, setContactMethod] = useState("email");
 	const validationSchema = Yup.object().shape({
 		name: Yup.string().required("Name is required"),
@@ -32,10 +33,10 @@ const ContactForm = () => {
 			message: "",
 		},
 		validationSchema,
-		onSubmit: (values) => {
-			alert(
-				`Thank you, ${values.name}. I will contact you back via ${contactMethod}.`
-			);
+		onSubmit: () => {
+			if (formRef.current) {
+				formRef.current.submit();
+			}
 		},
 	});
 
@@ -43,7 +44,8 @@ const ContactForm = () => {
 		<div className="container-sm-12 pt-4 pb-4">
 			<h2 className="mb-4 text-purple fw-bold font-inter">Contact Me</h2>
 			<form
-				action="https://formsubmit.co/reutroz@gmail.com"
+				ref={formRef}
+				action="https://formsubmit.co/rosenfeldreut@gmail.com"
 				method="POST"
 				onSubmit={formik.handleSubmit}
 			>
