@@ -1,10 +1,9 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import "../style/contact.css";
 
 const ContactForm = () => {
-	const formRef = useRef(null);
 	const [contactMethod, setContactMethod] = useState("email");
 	const validationSchema = Yup.object().shape({
 		name: Yup.string().required("Name is required"),
@@ -33,26 +32,35 @@ const ContactForm = () => {
 			message: "",
 		},
 		validationSchema,
-		onSubmit: () => {
-			if (formRef.current) {
-				formRef.current.submit();
-			}
+		onSubmit: async (values, { resetForm }) => {
+			try {
+				const response = await fetch(
+					"https://formsubmit.co/rosenfeldreut@gmail.com",
+					{
+						method: "POST",
+						headers: { "Content-Type": "application/json" },
+						body: JSON.stringify(values),
+					}
+				);
 
-			setTimeout(() => {
-				window.location.reload();
-			}, 1000);
+				if (response.ok) {
+					alert("Message sent successfully!"); // Show success message
+					resetForm(); // Reset form fields
+					window.location.reload(); // Refresh the page after submission
+				} else {
+					alert("Failed to send message. Please try again.");
+				}
+			} catch (error) {
+				console.error("Error submitting form:", error);
+				alert("Something went wrong. Try again later.");
+			}
 		},
 	});
 
 	return (
 		<div className="container-sm-12 pt-4 pb-4">
 			<h2 className="mb-4 text-purple fw-bold font-inter">Contact Me</h2>
-			<form
-				ref={formRef}
-				action="https://formsubmit.co/rosenfeldreut@gmail.com"
-				method="POST"
-				onSubmit={formik.handleSubmit}
-			>
+			<form onSubmit={formik.handleSubmit}>
 				<input type="hidden" name="_next" value={window.location.href} />
 				<input type="hidden" name="_captcha" value="false" />
 				<div className="form-floating">
