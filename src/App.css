@@ -63,6 +63,8 @@ div {
 
 .anchor {
 	position: absolute;
+	margin: 0;
+	padding: 0;
 	margin-top: -120px;
 	left: 0;
 	width: 100vw;
