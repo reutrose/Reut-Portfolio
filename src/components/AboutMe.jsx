@@ -66,7 +66,7 @@ function AboutMe() {
 									href="/documents/ReutRosenfeld-Full-StackDeveloper.pdf"
 									target="_blank"
 								>
-									View My Resume <i className="fa-solid fa-circle-down"></i>
+									My Resume <i className="fa-solid fa-right-from-bracket"></i>
 								</a>
 							</div>
 						</div>
