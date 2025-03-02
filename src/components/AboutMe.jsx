@@ -54,10 +54,24 @@ function AboutMe() {
 								</Link>
 								<Link
 									className="text-dark"
-									to="https://www.instagram.com/reutrose/"
+									to="https://wa.me/972502944421"
 									target="_blank"
 								>
-									<i className="fa-brands fa-square-instagram mx-1"></i>
+									<i className="fa-brands fa-square-whatsapp mx-1"></i>
+								</Link>
+								<Link
+									className="text-dark"
+									to="mailto:reutroz@gmail.com"
+									target="_blank"
+								>
+									<i className="fa-solid fa-square-envelope mx-1"></i>
+								</Link>
+								<Link
+									className="text-dark"
+									to="tel:+972502944421"
+									target="_blank"
+								>
+									<i className="fa-solid fa-square-phone mx-1"></i>
 								</Link>
 							</div>
 							<div className="container-fluid p-0 m-0 fs-3">
@@ -66,7 +80,8 @@ function AboutMe() {
 									href="/documents/ReutRosenfeld-Full-StackDeveloper.pdf"
 									target="_blank"
 								>
-									My Resume <i className="fa-solid fa-right-from-bracket"></i>
+									My Resume &nbsp;
+									<i className="fa-solid fa-right-from-bracket"></i>
 								</a>
 							</div>
 						</div>
