@@ -60,6 +60,15 @@ function AboutMe() {
 									<i className="fa-brands fa-square-instagram mx-1"></i>
 								</Link>
 							</div>
+							<div className="container-fluid p-0 m-0 fs-3">
+								<a
+									className="btn btn-purple font-nunito m-0"
+									href="/documents/ReutRosenfeld-Full-StackDeveloper.pdf"
+									target="_blank"
+								>
+									View My Resume <i className="fa-solid fa-circle-down"></i>
+								</a>
+							</div>
 						</div>
 					</div>
 					<div className="col-lg-4 m-0 p-0 px-5 mb-4 text-purple d-flex justify-content-center align-items-center">
